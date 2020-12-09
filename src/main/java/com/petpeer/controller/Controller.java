@@ -23,6 +23,7 @@ public class Controller {
 @RequestMapping(value="/ureg")
 public String userreg(@RequestParam("username") String username,@RequestParam("password") String password,@RequestParam("cp") String cp,ModelMap  m) {
 	User u=new User();
+        User u1=new User();
 	u.setUsername(username);
 	u.setPassword(password);
 	u.setCp(cp);
